@@ -202,6 +202,7 @@ img {
 
 .cta-button {
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 90%;
@@ -210,13 +211,23 @@ img {
     background-color: var(--color-cta-green);
     color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 18px 20px;
+    padding: 12px 20px 14px;
     border-radius: 50px;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 10px rgba(6, 199, 85, 0.25);
     position: relative;
+    line-height: 1.3;
+}
+
+.cta-text-upper {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.cta-text-lower {
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .cta-button::after {
@@ -240,6 +251,59 @@ img {
     color: var(--color-text-sub);
     text-align: center;
     line-height: 1.5;
+}
+
+/* =========================================
+   CTA直前・周りのメリットボックス
+======================================== */
+.cta-benefit-box {
+    background-color: var(--color-bg-pale-pink);
+    border: 2px solid var(--color-accent-pink);
+    border-radius: 12px;
+    padding: 20px 16px;
+    margin: 0 auto 20px;
+    width: 90%;
+    max-width: 480px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(212, 138, 154, 0.1);
+}
+.cta-benefit-box.mt-30 {
+    margin-top: 30px;
+}
+.cta-benefit-box.mt-40 {
+    margin-top: 40px;
+}
+.cta-title-benefit {
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-accent-rose);
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.cta-benefit-list {
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-text-main);
+}
+.cta-benefit-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 10px;
+}
+.cta-benefit-list li:last-child {
+    margin-bottom: 0;
+}
+.cta-benefit-list li::before {
+    content: '✨';
+    position: absolute;
+    left: 0;
+    top: -2px;
+    font-size: 14px;
+}
+.cta-benefit-list strong {
+    color: var(--color-accent-rose);
+    font-weight: 700;
 }
 
 /* =========================================
