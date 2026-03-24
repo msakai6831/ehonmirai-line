@@ -518,6 +518,21 @@ img {
     margin: 0 auto 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+.profile-img-cutout {
+    width: 140px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+.character-img {
+    max-width: 140px;
+    display: block;
+    margin: 0 auto 16px;
+}
+.character-img-large {
+    max-width: 180px;
+    display: block;
+    margin: 0 auto 20px;
+}
 .profile-org {
     font-size: 12px;
     color: var(--color-text-sub);
